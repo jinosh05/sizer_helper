@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 
+import 'home_screen.dart';
+
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Sizer(
@@ -14,7 +18,7 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           title: 'Sizer',
           theme: ThemeData.light(),
-          // home: HomeScreen(),
+          home: const HomeScreen(),
         );
       },
     );
